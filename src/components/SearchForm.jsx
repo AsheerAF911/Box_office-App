@@ -4,10 +4,6 @@ const SearchForm = ({ onSearch }) => {
   const [searchStr, setSearchStr] = useState('');
   const [searchOption, setSearchOption] = useState('shows');
 
-  useEffect(() => {
-    console.log('COMPONENT MOUNTS');
-  }, []);
-
   const onInputChange = ev => {
     setSearchStr(ev.target.value);
   };
